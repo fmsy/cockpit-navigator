@@ -32,6 +32,10 @@ rm -rf %{buildroot}
 /usr/share/cockpit/navigator/*
 
 %changelog
+* Wed Dec 15 2021 Joshua Boudreau <jboudreau@45drives.com> 0.5.9-1
+- Disallow downloading files of size 0 to avoid Cockpit bug where fsread never returns.
+- Overhaul copying/moving to use built in functions instead of rsync, speeding up
+  moving files in the same fs.
 * Wed Dec 01 2021 Joshua Boudreau <jboudreau@45drives.com> 0.5.8-1
 - Fix non-root user file downloads.
 * Mon Nov 29 2021 Joshua Boudreau <jboudreau@45drives.com> 0.5.7-1
