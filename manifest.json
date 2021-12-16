@@ -25,13 +25,13 @@
         "deb": [
             "cockpit",
             "python3",
-            "rsync",
+            "python3-magic",
             "zip"
         ],
         "el": [
             "cockpit",
             "python3",
-            "rsync",
+            "python3-magic",
             "zip"
         ]
     },
